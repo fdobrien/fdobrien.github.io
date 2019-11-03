@@ -1,0 +1,254 @@
+/* Copyright 2010-2018 Francis Donal O'Brien */
+
+body {
+  background: white;
+  color: black;
+}
+
+td#arbitrator {
+  height: 75px;
+  text-align: center;
+}
+
+td#emailme {
+  text-align: center;
+  font-size: 5%;
+}
+
+td#emailme a {
+  color: transparent;
+}
+
+td#title {
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-size: 200%;
+}
+
+td#subtitle {
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-size: 120%;
+}
+
+td#headername {
+  font-family: Arial, sans-serif;
+  font-size: 120%;
+  text-align: left;
+  color: gray;
+}
+
+td#headertitle {
+  font-family: Arial, sans-serif;
+  font-size: 120%;
+  text-align: right;
+  color: gray;
+}
+
+h1 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 200%;
+  margin-top: 0px;
+}
+
+h1#nametitle {
+  text-align: center;
+}
+
+h1#subpagetitle {
+  text-align: center;
+}
+
+h2 {
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-size: 120%;
+}
+
+h2#subtitle {
+  text-align: center;
+}
+
+h3 {
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-size: 100%;
+}
+
+h3#date {
+  text-align: center;
+}
+
+div#pageheader {
+  position: absolute;
+  background: rgb(230,230,250);
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 80px;
+  border-bottom: 1px solid silver;
+}
+
+div#pageheaderbody {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  right: 20px;
+}
+
+div#mainmenu {
+  position: absolute;
+  top: 51px;
+  left: 0px;
+  right: 0px;
+  z-index:1;
+}
+
+div#mainpagebody {
+  background: white;
+  position: relative;
+  top: 81px;
+  left: 0px;
+  right: 0px;
+  color: black;
+}
+
+div#copyrightnotice {
+  background: white;
+  text-align: center;
+  clear: both;
+  color: black;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-size: 70%;
+}
+
+div#mainpagetext {
+  background: white;
+  color: black;
+}
+
+div#mainpagepic {
+  background: white;
+  top: 20px;
+  right: 20px;
+}
+
+div#subpagebody {
+  background: white;
+  position: relative;
+  top: 100px;
+  left: 0px;
+  right: 0px;
+  color: black;
+}
+
+div#awardspagetext {
+  background: white;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  right: 0px;
+  color: black;
+  margin-left: 20px;
+}
+
+/* Sub Container */
+ul#menuslist li ul {
+  background-color: rgb(230,230,250);
+  border-style: solid;
+  border-color: silver;
+  border-width: 0px 1px 1px 1px;
+  padding: 5px;
+  padding-top: 10px;
+  margin: 0px 0px 0px 0px;
+}
+
+/* Main Items */
+ul#menuslist li a {
+  color: black;
+  text-align: left;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  text-decoration: none;
+  border-style: none;
+  border-color: #ffffff;
+  border-width: 1px 1px 0px 1px;
+  padding: 2px 0px 0px 15px;
+  text-align: left;
+  height: 18px;
+}
+
+/* Underline menu items when hovering. */
+ul#menuslist li:hover>a {
+  text-decoration: underline;
+}
+
+ul#menuslist ul a {
+  color: black;  /* Colour of text in drop down menus */
+  text-align: left;
+  font-size: 12px;
+  font-weight: normal;
+  text-decoration: none;
+  border-style: none;
+  border-color: #000000;
+  border-width: 1px;
+  padding: 2px 0px 2px 10px;
+}
+
+.menusdiv ul, .menusdiv li, .menusdiv div, .menusdiv span, .menusdiv a {
+  text-align: left;
+  vertical-align: top;
+  padding: 0px;
+  margin: 0;
+  list-style: none outside none;
+  border-style: none;
+  background-image: none;
+  clear: none;
+  float: none;
+  display: block;
+  position: static;
+  overflow: visible;
+  line-height: normal;
+}
+
+/* Make drop down menu appear below the heading */
+.menusdiv .menudropdown {
+  position: relative;
+}
+
+/* Make the menus invisible by default. */
+.menusdiv .menudropdowncontents {
+  position: absolute;
+  visibility: hidden;
+}
+
+/* Make main menus appear side-by-side, rather than vertically. */
+.menusdiv li {
+  list-style: none;
+  font-size: 1px;    /* Vertical space between menu items */
+  float: left;
+}
+
+/* Make the menu items stack vertically */
+.menusdiv ul ul li {
+  width: 100%;
+  float: none;
+}
+
+/* Hovering over the menu heading makes menu visible. */
+.menusdiv ul li:hover .menudropdowncontents {
+  visibility: visible;
+}
+
+/* Hovering over menu item makes sub-menu visible. */
+.menusdiv ul ul li:hover .menudropdowncontents {
+  visibility: visible;
+}
+
+/* Hovering over different menu item makes sub-menu invisible. */
+.menusdiv li:hover ul .menudropdowncontents {
+  visibility: hidden;
+}
